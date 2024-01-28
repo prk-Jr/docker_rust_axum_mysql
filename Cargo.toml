@@ -1,0 +1,14 @@
+[package]
+name = "dockerize_it"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+prkorm = "0.5.0"
+axum = "0.7.4"
+dotenvy = "0.15.7"
+serde = "1.0.196"
+tokio = { version = "1.35.1", features = ["rt-multi-thread"] }
+sqlx = { version = "0.7.3", features = ["mysql", "runtime-tokio-rustls"] }
